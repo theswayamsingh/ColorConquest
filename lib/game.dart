@@ -63,21 +63,23 @@ class _Game extends State<Game> {
     }
     return MaterialApp(
         debugShowCheckedModeBanner:
-            false, // To prevent pixel overflow due to keyboard.
-        home: Scaffold(
-          resizeToAvoidBottomInset: false,
-          body: Container(
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  Color.fromARGB(255, 255, 236, 64),
-                  Color.fromARGB(255, 255, 42, 0)
-                ],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
+            false,
+        home: SafeArea(
+          child: Scaffold(
+            resizeToAvoidBottomInset: false,
+            body: Container(
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    Color.fromARGB(255, 255, 236, 64),
+                    Color.fromARGB(255, 255, 42, 0)
+                  ],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
               ),
+              child: screenWidget,
             ),
-            child: screenWidget,
           ),
         ),
       );
