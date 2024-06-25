@@ -57,7 +57,7 @@ class RulesScreen extends StatelessWidget {
                             height: screenHeight * .54,
                             child: Image.asset('images/screenshots/01.png')),
                         Text(
-                          "The goal of this game is to occupy as much as boxes and make opponent's score to zero by conquering all the coloured boxes occupied by the opponent.",
+                          "The goal of this game is to occupy as much as boxes and make opponent's score to zero by conquering all the colored boxes occupied by the opponent.",
                           style: GoogleFonts.oswald(
                             color: Colors.black,
                             fontSize: screenHeight * .027,
@@ -95,7 +95,7 @@ class RulesScreen extends StatelessWidget {
                         ),
                         const Text(''),
                         Text(
-                          "NOTE : The player can tap only on revealed boxes containing his/her color (e.g. red player can tap only on red boxes, not on blue boxes.)",
+                          "NOTE : The player can tap only on revealed boxes containing his/her color (e.g. red player can tap only on red boxes, not on blue boxes).",
                           style: GoogleFonts.oswald(
                             color: Colors.black,
                             fontSize: screenHeight * .027,
