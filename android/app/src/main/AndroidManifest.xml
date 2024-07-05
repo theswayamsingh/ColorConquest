@@ -3,6 +3,9 @@
         android:label="Color Conquest"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4909206634233478~2081324420"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
