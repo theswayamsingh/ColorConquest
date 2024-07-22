@@ -7,7 +7,7 @@ class HomeScreen extends StatelessWidget {
 
   final void Function() playGame;
   final void Function() rulesScreen;
-
+  
   @override
   Widget build(context) {
     double screenWidth = MediaQuery.of(context).size.width;
@@ -15,7 +15,7 @@ class HomeScreen extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        SizedBox(height: screenHeight * .08),
+        // SizedBox(height: screenHeight * .04),
         Text(
           'COLOR',
           style: GoogleFonts.satisfy(

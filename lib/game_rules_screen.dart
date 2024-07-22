@@ -11,15 +11,12 @@ class RulesScreen extends StatelessWidget {
     return Center(
       child: Column(
         children: [
-          SizedBox(
-            height: screenHeight * .03,
-          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               IconButton(
                 icon: Padding(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.only(right: 10),
                   child: SizedBox(
                     height: screenHeight * .055,
                     width: screenHeight * .055,

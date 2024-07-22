@@ -15,15 +15,12 @@ class PlayerInfoScreen extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.max,
       children: [
-        SizedBox(
-          height: screenHeight * .04,
-        ),
         Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             IconButton(
               icon: Padding(
-                padding: const EdgeInsets.all(15.0),
+                padding: const EdgeInsets.only(right: 15),
                 child: Image.asset(
                   'images/cross.png',
                   width: screenWidth * 0.12,

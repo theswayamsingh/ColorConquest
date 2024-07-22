@@ -305,15 +305,12 @@ class _GameScreen extends State<GameScreen> {
             backgroundColor: mainClr,
             body: Column(
               children: [
-                SizedBox(
-                  height: screenHeight * .04,
-                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     IconButton(
                       icon: Padding(
-                        padding: const EdgeInsets.all(15.0),
+                        padding: const EdgeInsets.only(right: 15),
                         child: SizedBox(
                           child: Image.asset(
                             'images/cross.png',
@@ -387,7 +384,7 @@ class _GameScreen extends State<GameScreen> {
                   ],
                 ),
                 SizedBox(
-                  height: screenHeight * .07,
+                  height: screenHeight * .06,
                 ),
                 GridView.builder(
                   padding: const EdgeInsets.all(25.0),
@@ -434,7 +431,7 @@ class _GameScreen extends State<GameScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: screenHeight * .07,
+                  height: screenHeight * .06,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
