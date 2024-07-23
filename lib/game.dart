@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:color_conquest/home_screen.dart';
 import 'package:color_conquest/game_screen.dart';
@@ -48,10 +46,9 @@ class _Game extends State<Game> {
       //   onAdLoaded: (Ad ad) {
       //   print('Ad loaded');
       // }, 
-      //   onAdFailedToLoad: (Ad ad, LoadAdError error) {
-      //   log(error.toString());
-      //   ad.dispose();
-      // },
+        onAdFailedToLoad: (Ad ad, LoadAdError error) {
+        ad.dispose();
+      },
       ),
       request: const AdRequest());
 
@@ -62,10 +59,9 @@ class _Game extends State<Game> {
       //   onAdLoaded: (Ad ad) {
       //   print('Ad loaded');
       // }, 
-      //   onAdFailedToLoad: (Ad ad, LoadAdError error) {
-      //   log(error.toString());
-      //   ad.dispose();
-      // },
+        onAdFailedToLoad: (Ad ad, LoadAdError error) {
+        ad.dispose();
+      },
       ),
       request: const AdRequest());
 
